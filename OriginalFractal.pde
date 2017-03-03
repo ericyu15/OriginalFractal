@@ -3,7 +3,7 @@ public void setup()
 	size(300,300);
 	background(0);
 }
-class Fractal
+public void originalFractal(int x, int y, int len)
 {
-	if()
+	
 }
