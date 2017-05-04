@@ -2,10 +2,13 @@ int num = 50;
 public void setup()
 {
 	size(300,300);
+	noFill();
+	stroke(255);
 	background(0);
+	originalFractal(150, 150, 300);
 }
-public void originalFractal(int x, int y, int len)
-{
+public void originalFractal(float x, int y, float len)
+{ 
 	ellipse(x, y, len, len);
 	if(len <= num)
 	{
@@ -13,6 +16,6 @@ public void originalFractal(int x, int y, int len)
 	}
 	else 
 	{
-		fractal(x+len/4, y, len/2);
+		originalFractal(x+len/4, y, len/2);
 	}
 }
